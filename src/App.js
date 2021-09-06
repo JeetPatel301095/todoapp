@@ -17,7 +17,6 @@ function App() {
 
   const addTodo = (e) =>{
     e.preventDefault()
-    console.log("Hi")
     db.collection("todos").add({
       todo: input,
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
